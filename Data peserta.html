@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Data Peserta</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="index2.html">E-seminar</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Create_seminar.html">Create</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="seminar.html">Seminar</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="peserta.html">Peserta</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="registrasi.html">Registrasi</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color: rgb(255, 165, 0);">
+          <li class="breadcrumb-item"><a href="index2.html" style="color: rgb(70, 69, 69); text-decoration: none;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style="color: rgb(70, 69, 69);">peserta</li>
+        </ol>
+      </nav>
+    </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="card-body">
+        <div class="filter">
+          <h6>Tanggal Daftar : </h6>
+          <form class="kegiatan">
+            <table cellpadding="6">
+              <tr>
+                <td><label for="form"> Form </label></td>
+                <td> : </td>
+                <td><input type="date" name="date" value="date"></td>
+                <td> </td>
+                <td><label for="form"> Kategori peserta </label></td>
+                <td> : </td>
+                <td><select>
+                  <option value="Mahasiswa">Mahasisswa</option>
+                </select></td>
+                <td><label for="form"> Status peserta </label></td>
+                <td> : </td>
+                <td><select>
+                  <option value="Mahasiswa">Booking</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="form"> To </label></td>
+                <td> : </td>
+                <td><input type="date" name="date" value="date"></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+    <div class="card-body">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    <div class="table-responsive mt-3">
+      <table id="add-row" class="display table table-striped table-hover border">
+        <thead>
+          <tr class="bg-warning">
+            <th>No.</th>
+            <th scope="col">Nama Lengkap</th>
+            <th scope="col">Tempat Lahir</th>
+            <th scope="col">Tanggal Lahir</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Email</th>
+            <th scope="col">Kategori</th>
+            <th scope="col">status</th>
+            <th scope="col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. </td>
+            <td>Miatul nabilla</td>
+            <td>Bima</td>
+            <td>2005-08-12</td>
+            <td>Perempuan</td>
+            <td>nabilla@gmail.com</td>
+            <td>Mahasiswa</td>
+            <td>Booking</td>
+            <td>
+              <button type="submit" name="submit" class="btn btn-danger btn-sm"><i class="fa fa-eye-fill"></i></button>
+              <button type="submit" name="submit" class="btn btn-warning btn-sm"><i class="fa fa-pencil-square"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
